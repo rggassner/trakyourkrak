@@ -1,5 +1,5 @@
 # trakyourkrak
-Track your hashcat cracking over time using this machine-readable log viewer. Used python, pandas, plotly and matplotlib. Tested with hashcat 6.2.5, since machine-readable is quite recent you might need to update.
+Track your hashcat cracking over time using this graphical log viewer. Used python, pandas, plotly and matplotlib. Tested with hashcat 6.2.5, since machine-readable is quite recent you might need to update.
 
 Both tools allow pan and zoom. Vertical lines represent a reset in relative time (mask changing for example). You can swith tools by commenting the line:
 ```
