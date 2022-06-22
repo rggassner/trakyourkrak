@@ -1,5 +1,17 @@
 # trakyourkrak
-Track your hashcat cracking over time using the machine-readable log viewer  python, pandas, plotly and matplotlib
+Track your hashcat cracking over time using this machine-readable log viewer. Used python, pandas, plotly and matplotlib. Tested with hashcat 6.2.5, since machine-readable is quite recent you might need to update.
+
+Both tools allow pan and zoom. Vertical lines represent a reset in relative time (mask changing for example). You can swith tools by commenting the line:
+```
+pd.options.plotting.backend = "plotly"
+```
+
+Plotly using '1s' time_window
+![plotly](/images/plotly.png)
+
+Matplotlib using '5min' time_window. Vertical lines overlaps, meaning that at least one reset happened within that time frame.
+![matplotlib](/images/matplotlib.png)
+
 
 Add the following parameters to your hashcat session. 
 ```
